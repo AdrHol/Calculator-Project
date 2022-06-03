@@ -1,0 +1,108 @@
+/* * {
+    border: 1px solid black
+} */
+
+body {
+    width: auto;
+    height: 100vh;
+    margin: 0;
+    background-color: aliceblue;
+}
+
+.calculator {
+    box-shadow: 0 0 50px 5px black;
+    border-radius: 10px;
+    background-color: rgb(240, 240, 240);
+    border: 1px solid silver;
+    height: 560px;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+}
+
+.screen {
+    border-radius: 5px;
+    border: 3px solid silver;
+    background-color: black;
+    width: 94%;
+    height: 120px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.upper-buttons {
+    margin-top:10px;
+    margin-left: auto;
+    margin-right:auto;
+    width: 94%;
+    height: 100px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.num-buttons {
+    height: 280px;
+    width: 300px; 
+    margin-left: 10px;
+    display: inline-flex;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    gap: 5px;
+
+}
+
+.right-buttons {
+    height: 275px;
+    width: 100px;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    box-sizing: border-box;
+}
+
+.numeric, .functional {
+    border-radius: 10px;
+    height: 80px;
+    width: 80px;
+    
+}
+
+.container {
+    height: 280px;
+    width: 450px;
+    display: flex;
+    gap: 27px;
+}
+
+.numeric {
+    background-color: rgb(79, 209, 79);
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.functional {
+    background-color: rgb(167, 212, 167);
+    font-size: 25px;
+    font-weight: bold;
+}
+.numeric:hover,
+.functional:hover {
+    opacity: 0.3;
+}
+
+.numeric:active,
+.functional:active {
+    opacity: 1;
+    background-color: rgb(0, 255, 0);
+}
+
