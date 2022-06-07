@@ -17,8 +17,6 @@ const functionDatabase = {
         return division = a/b;
     }
 }
-
-
 let input = '';
 let memory; 
 let operation;
@@ -47,8 +45,6 @@ const functional = document.querySelectorAll('.functional')
 for (let i = 0; i < functional.length; i++) {
 
     functional[i].addEventListener('click', function(e){
-        console.log(this.value)
-
         if (this.value == 'backspace'){
             displayOperations = displayOperations.slice(0,(displayOperations.length - input.length));
             input = '';
@@ -115,44 +111,29 @@ function isDecimal(num){
     }
 }
 
+//  keyboard support
 
 
+const body = document.querySelector('body');
 
+body.addEventListener('keypress', function(e){
 
-//Keyboard connection 
-// const body = document.querySelector('body');
+    const button = document.querySelector(`[data-key='${e.keyCode}']`);
+    if (!button){
+        return
+    }
 
-// body.addEventListener('keypress',function(e){
-//     let key = document.querySelector(`[data-key='${e.keyCode}']`);
-//     key.classList.add('pressed');
-//     function remover(){
-//         key.classList.remove('pressed')
-//     }
-//     setTimeout(remover, 300);
+    button.click();
+});
 
-//     console.log(Array.from(key.classList).includes('numeric'))
-//     if (Array.from(key.classList).includes('numeric')){
-//     input = input + key.value;
-//         updateDisplay();
-//     } else if (Array.from(key.classList).includes('functional')) {
-//         if (this.value == 'C') {
-//             input = '';
-//             memory = '';
-//           updateDisplay();
-//         } else if (memory != 0 && input == '') {
-//             operation = this.id;
-//         }
-//          else {
-//         operation = this.id;
-//         memory = Number(input);
-//         input = '';
-//         updateDisplay();
-//         }
-//     }
-
-
-// })
-
+body.addEventListener('keydown',function(e){
+   if (e.keyCode == 8) {
+    const button = document.querySelector(`[data-key='${e.keyCode}']`);
+    button.click();
+   } else {
+       return;
+   };
+})
 
 
 
