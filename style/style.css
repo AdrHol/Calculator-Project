@@ -14,7 +14,7 @@ body {
     border-radius: 10px;
     background-color: rgb(240, 240, 240);
     border: 1px solid silver;
-    height: 560px;
+    height: 645px;
     width: 450px;
     margin-left: auto;
     margin-right: auto;
@@ -70,7 +70,7 @@ body {
     box-sizing: border-box;
 }
 
-.numeric, .functional {
+.numeric, .functional, #equal{
     border-radius: 10px;
     height: 80px;
     width: 80px;
@@ -91,19 +91,21 @@ body {
     color: white;
 }
 
-.functional {
+.functional, #equal {
     background-color: rgb(167, 212, 167);
     font-size: 25px;
     font-weight: bold;
 }
 .numeric:hover,
-.functional:hover {
+.functional:hover,
+#equal:hover {
     opacity: 0.3;
 }
 
 .numeric:active,
 .functional:active,
-.pressed {
+.pressed,
+#equal:active {
     opacity: 1;
     background-color: rgb(0, 255, 0);
 }
@@ -120,3 +122,6 @@ body {
     margin-left: 10px;
 }
 
+#zero {
+ width: 165px ;
+}

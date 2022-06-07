@@ -10,10 +10,10 @@
         <section class="calculator">
             <div class="screen"></div>
             <div class="upper-buttons">
-                <button class="functional" data-key="48" value="0">0</button>
+                <button class="functional" id='back' data-key="8" value="backspace">&#8592;</button>
                 <button class="functional" data-key="99" value="C">C</button>
-                <button class="functional" data-key="42" value="*">*</button>
-                <button class="functional" data-key="47" value="/">/</button>
+                <button class="functional" id="multiply" data-key="42" value="*">*</button>
+                <button class="functional" id="divide" data-key="47" value="/">/</button>
             </div>
             <div class="container">
             <div class="num-buttons">
@@ -26,11 +26,13 @@
                 <button class="numeric" data-key="49" value="1">1</button>
                 <button class="numeric" data-key="50" value="2">2</button>
                 <button class="numeric" data-key="51" value="3">3</button>
+                <button class="numeric" id="zero" data-key="48" value="0">0</button>
+                <button class="numeric" id="dot" data-key="190" value=".">.</button>
             </div>
             <div class="right-buttons">
-                <button class="functional" data-key="43" value="+">+</button>
-                <button class="functional" data-key="45" value="-">-</button>
-                <button class="functional" data-key="61" value="=">=</button>
+                <button class="functional" id="sum" data-key="43" value="+">+</button>
+                <button class="functional" id="subtract" data-key="45" value="-">-</button>
+                <button id="equal" data-key="61" value="=">=</button>
             </div>
             </div>
         </section>
